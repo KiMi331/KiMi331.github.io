@@ -13,23 +13,31 @@
         <input type="text" id="name"><br>
         Wybierz swoje zainteresowania:
         <select id="zainteresowanie">
+            <option value="blank"></option>
             <option value="gry">Gry</option>
             <option value="ksiazki">Książki</option>
             <option value="sport">Sport</option>
         </select><br>
-        <img src="zdj.jpeg" width="300" height="200"><br>
+        <img src="zdj.jpeg" width="300" height="200" id="kot">
+        <div id="najechanie"> </div>
+        <br>
         <button id="button" type="button">Wyślij</button>
-        <input type="reset" value="Wyczyść">
-        <div id="info"></div>
+        <input type="reset" value="Wyczyść" onclick="window.location.reload()">
+        <div id="info"> </div>
     </form>
     <script>
         var button = document.getElementById("button");
+        var kot = document.getElementById("kot")
         
         var onButtonClick = function()
         {
             var name = document.getElementById("name").value;
             var zainteresowanie = document.getElementById("zainteresowanie").value;
             var podziekowanie;
+            if(zainteresowanie == "blank")
+                {
+                    podziekowanie = "Wybierz zainteresowanie";
+                }
             if (zainteresowanie == "gry")
                 {
                     podziekowanie = name + " ,dziękuję za podanie gier jako twoje zainteresowanie";
@@ -44,7 +52,22 @@
                 }
             document.getElementById("info").textContent = podziekowanie;
         }
+        var onMouseOver = function(e)
+        {
+            e.preventDefault();
+            var audio = document.createElement("audio");
+            audio.src = "miau.mp3";
+            audio.autoplay = "true";
+            document.body.appendChild(audio);
+            document.getElementById("najechanie").textContent = "Na zdjęciu znajduje się śliczny kotek";   
+        }
+        var onMouseOut = function()
+        {
+            document.getElementById("najechanie").textContent = "";
+        }
         button.addEventListener("click", onButtonClick);
+        kot.addEventListener("mouseover", onMouseOver);
+        kot.addEventListener("mouseout", onMouseOut);
     </script>
 </body>
 
