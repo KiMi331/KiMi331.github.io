@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Zadanie 1 </title>
+</head>
+
+<body>
+
+    <form>
+        Podaj imię:
+        <input type="text" id="name"><br>
+        Wybierz swoje zainteresowania:
+        <select id="zainteresowanie">
+            <option value="gry">Gry</option>
+            <option value="ksiazki">Książki</option>
+            <option value="sport">Sport</option>
+        </select><br>
+        <img src="zdj.jpeg" width="300" height="200"><br>
+        <button id="button" type="button">Wyślij</button>
+        <input type="reset" value="Wyczyść">
+        <div id="info"></div>
+    </form>
+    <script>
+        var button = document.getElementById("button");
+        
+        var onButtonClick = function()
+        {
+            var name = document.getElementById("name").value;
+            var zainteresowanie = document.getElementById("zainteresowanie").value;
+            var podziekowanie;
+            if (zainteresowanie == "gry")
+                {
+                    podziekowanie = name + " ,dziękuję za podanie gier jako twoje zainteresowanie";
+                }
+            if (zainteresowanie == "ksiazki")
+                {
+                    podziekowanie = name + " ,dziękuję za podanie książek jako twoje zainteresowanie";
+                }
+            if (zainteresowanie == "sport")
+                {
+                    podziekowanie = name + " ,dziękuję za podanie sportu jako twoje zainteresowanie";
+                }
+            document.getElementById("info").textContent = podziekowanie;
+        }
+        button.addEventListener("click", onButtonClick);
+    </script>
+</body>
+
+</html>
