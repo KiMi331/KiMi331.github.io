@@ -357,7 +357,7 @@ body
 /*///////////////////////////*/
 /*///// TABLET PIONOWO /////*/
 /*/////////////////////////*/
-@media (min-width: 750px) and (max-width: 950px) and (orientation: portrait) 
+@media (min-width: 750px) and (max-width: 950px)
 {
 body
 {
