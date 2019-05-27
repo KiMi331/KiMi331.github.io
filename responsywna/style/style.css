@@ -60,6 +60,14 @@ body
 {
     display:none;
 }
+.ssmenu
+{
+    display:none;
+}
+.usmenu
+{
+    display:none;
+}
 .menu:hover
 {
     animation-name:menu;
@@ -119,7 +127,7 @@ body
     0% {width:200px; height:200px;}
     100% {width:210px; height:220px;}
     from{background-color:#979A9A;}
-    to{background-color:#f1c40f;}
+    to{background-color:#626567;}
 }
 /*///////////////////////////*/
 /*//////// KOMPUTER ////////*/
@@ -177,6 +185,14 @@ body
     text-align:center;
 }
 .smenu
+{
+    display:none;
+}
+.ssmenu
+{
+    display:none;
+}
+.usmenu
 {
     display:none;
 }
@@ -299,6 +315,14 @@ body
 {
     display:none;
 }
+.ssmenu
+{
+    display:none;
+}
+.usmenu
+{
+    display:none;
+}
 .menu:hover
 {
     animation-name:menu;
@@ -335,7 +359,7 @@ body
 #footer
 {
     position:absolute;
-    font-size:16px;
+    font-size:14px;
     font-family:Courier;
 	clear:both;
 	left:0px;
@@ -394,6 +418,13 @@ body
 {
 	display: none;
 }
+#stitle
+{
+    left:calc(50% - 185px);
+    position:relative; 
+    top:15px;    
+}
+
 #title-p
 {
     display: block;
@@ -432,6 +463,14 @@ body
 	border-radius:15px 50px 30px;
     text-align:center;
 }
+.ssmenu
+{
+    display:none;
+}
+.usmenu
+{
+    display:none;
+}
 .smenu:hover
 {
     animation-name:menu;
@@ -468,13 +507,149 @@ body
 #footer
 {
     position:absolute;
-    font-size:16px;
+    font-size:12px;
     font-family:Courier;
 	clear:both;
 	left:0px;
     top:1050px;
 	width:100%;
-	height:30px;
+	height:20px;
+    text-align:center;
+    padding-top:10px;
+	background-color:#ebebeb;
+}
+@keyframes menu
+{   
+    from{background-color:#979A9A;}
+    to{background-color:#626567;}
+}
+}
+/*///////////////////////////*/
+/*///// TELEFON POZIOMO ////*/
+/*/////////////////////////*/
+@media (min-width: 450px) and (max-width: 750px)
+{
+body
+{
+    background-image:url(../img/background.png);
+    background-repeat:repeat;
+}
+.text
+{
+    position:absolute;
+    top:calc(50% - 30px);
+    left:calc(50% - 100px);
+    font-family:Courier;
+    font-size:23px;
+    font-weight:bold;
+}
+#kotek
+{
+    position: absolute;
+    width:150px;
+    height:150px;
+    top:20px;
+    left:-30px;
+}
+#logo
+{	
+	z-index:2;
+	top:-25px;
+	left:0;
+	position:absolute;
+	height:120px;
+	background-color:#ebebeb;
+	width:100%;
+}
+#title
+{
+	display: none;
+}
+#stitle
+{
+    position: relative;
+    left:20px;
+    top:25px;
+            
+}
+#title-p
+{
+    display: block;
+    position:absolute;
+    top:95px;
+    height:100px;
+    width:100%;
+    background-color:#ebebeb;
+	left:0;
+	font-size:50px;
+	font-weight:bold;
+	font-family:Courier;
+}
+.menu
+{
+    display:none;
+}
+.smenu
+{
+    display:none;
+}
+.ssmenu
+{
+    display:block;
+	z-index:3;
+	float:left;
+	position:absolute;
+	width:200px;
+	height:150px;
+	background-color:#979A9A;
+	border-radius:15px 50px 30px;
+    text-align:center;
+}
+.usmenu
+{
+    display:none;
+}
+.ssmenu:hover
+{
+    animation-name:menu;
+    animation-duration:0.5s;
+    animation-fill-mode: both;   
+}
+#description
+{
+    background-color:#f4d03f;
+    font-family:Courier;
+    text-align:center;
+    padding:40px;
+    font-size:11px;
+    width:350px;
+    position:absolute;
+    top:225px;
+    left:calc(50% - 100px);
+    border-radius:50px 50px 20px 20px;
+}
+#up
+{
+    z-index:1;
+    position:fixed;
+    top:91%;
+    left:calc(100% - 40px);
+    background-color:#f4d03f;
+    width:40px;
+    height:40px;
+    border-radius:10px 0 0 10px;
+    margin:auto;
+}
+#footer
+{
+    position:absolute;
+    font-size:11px;
+    font-family:Courier;
+	clear:both;
+	left:0px;
+    top:825px;
+	width:100%;
+	height:20px;
     text-align:center;
     padding-top:10px;
 	background-color:#ebebeb;
