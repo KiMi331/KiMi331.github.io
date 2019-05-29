@@ -1,663 +1,867 @@
 /*///////////////////////////*/
 /*//////// DOMYŚLNE ////////*/
 /*/////////////////////////*/
-html 
-{
-  scroll-behavior: smooth;
+html,
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-body
-{
-    background-image:url(../img/background.png);
-    background-repeat:repeat;
+
+a:link {
+    text-decoration: none;
+    color: black;
 }
-.text
-{
-    position:absolute;
-    top:calc(50% - 30px);
-    left:calc(50% - 100px);
-    font-family:Courier;
-    font-size:25px;
-    font-weight:bold;
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
-#logo
-{	
-	z-index:2;
-	top:-25px;
-	left:0;
-	position:absolute;
-	height:200px;
-	background-color:#ebebeb;
-	width:100%;
+
+body {
+    background-image: url(../img/background.png);
+    background-repeat: repeat;
+}
+
+.text {
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 100px);
+    font-family: Courier;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#logo {
+    z-index: 2;
+    top: -25px;
+    left: 0;
+    position: absolute;
+    height: 200px;
+    background-color: #ebebeb;
+    width: 100%;
 
 }
-#title
-{
-	z-index:3;
-	position:relative;
-	left:calc(50% - 480px);
-	top:70px;
-	font-size:60px;
-	font-weight:bold;
-	font-family:Courier;
+
+#title {
+    z-index: 3;
+    position: relative;
+    left: calc(50% - 480px);
+    top: 70px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Courier;
 }
-#title-p
-{
+
+#title-p {
     display: none;
 }
-.menu
-{
-	z-index:3;
-	float:left;
-	position:absolute;
-	top:230px;
-	width:200px;
-	height:150px;
-	background-color:#979A9A;
-	border-radius:15px 50px 30px;
-    text-align:center;
+
+.menu {
+    z-index: 3;
+    float: left;
+    position: absolute;
+    top: 230px;
+    width: 200px;
+    height: 150px;
+    background-color: #979A9A;
+    border-radius: 15px 50px 30px;
+    text-align: center;
 }
-.smenu
-{
-    display:none;
+
+.smenu {
+    display: none;
 }
-.ssmenu
-{
-    display:none;
+
+.ssmenu {
+    display: none;
 }
-.usmenu
-{
-    display:none;
+
+.usmenu {
+    display: none;
 }
-.menu:hover
-{
-    animation-name:menu;
-    animation-duration:0.5s;
+
+.menu:hover {
+    animation-name: menu;
+    animation-duration: 0.5s;
     animation-fill-mode: both;
-    
-        
+
+
 }
-#description
-{
-    background-color:#f4d03f;
-    font-family:Courier;
-    text-align:center;
-    padding:40px;
-    font-size:16px;
-    width:670px;
-    position:absolute;
-    top:470px;
-    left:calc(50% - 375px);
-    border-radius:50px 50px 20px 20px;
+
+.description {
+    background-color: #f4d03f;
+    font-family: Courier;
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    width: 150px;
+    position: absolute;
+    top: 470px;
+    left: calc(50% - 375px);
+    border-radius: 50px 50px 20px 20px;
 }
-#up
-{
-    z-index:1;
-    position:fixed;
-    top:91%;
-    left:calc(100% - 40px);
-    background-color:#f4d03f;
-    width:40px;
-    height:40px;
-    border-radius:10px 0 0 10px;
-    margin:auto;
+
+.sdescription {
+    display: none;
 }
-#footer
-{
-    position:absolute;
-    font-size:16px;
-    font-family:Courier;
-	clear:both;
-	left:0px;
-    top:1100px;
-	width:100%;
-	height:30px;
-    text-align:center;
-    padding-top:10px;
-	background-color:#ebebeb;
+
+#up {
+    z-index: 1;
+    position: fixed;
+    top: 91%;
+    left: calc(100% - 40px);
+    background-color: #f4d03f;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px 0 0 10px;
+    margin: auto;
 }
-@keyframes menu
-{   
-    0% {width:200px; height:200px;}
-    100% {width:210px; height:220px;}
-    from{background-color:#979A9A;}
-    to{background-color:#626567;}
+
+#footer {
+    position: absolute;
+    font-size: 16px;
+    font-family: Courier;
+    clear: both;
+    left: 0px;
+    top: 1100px;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #ebebeb;
 }
-@keyframes menu
-{   
-    0% {width:200px; height:200px;}
-    100% {width:210px; height:220px;}
-    from{background-color:#979A9A;}
-    to{background-color:#626567;}
+
+@keyframes menu {
+    from {
+        background-color: #979A9A;
+    }
+
+    to {
+        background-color: #626567;
+    }
 }
+
 /*///////////////////////////*/
 /*//////// KOMPUTER ////////*/
 /*/////////////////////////*/
-@media (min-width: 1050px)
-{
-body
-{
-    background-image:url(../img/background.png);
-    background-repeat:repeat;
+@media (min-width: 1050px) {
+    body {
+        background-image: url(../img/background.png);
+        background-repeat: repeat;
+    }
+
+    #content {
+        min-height: 100%;
+    }
+
+    .text {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 110px);
+        font-family: Courier;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    #logo {
+        z-index: 2;
+        top: -25px;
+        left: 0;
+        position: absolute;
+        height: 200px;
+        background-color: #ebebeb;
+        width: 100%;
+    }
+
+    #title {
+        z-index: 3;
+        position: relative;
+        left: calc(50% - 500px);
+        top: 70px;
+        font-size: 60px;
+        font-weight: bold;
+        font-family: Courier;
+    }
+
+    #title-p {
+        display: none;
+    }
+
+    .menu {
+        z-index: 3;
+        float: left;
+        position: absolute;
+        top: 210px;
+        width: 220px;
+        height: 150px;
+        background-color: #979A9A;
+        border-radius: 15px 50px 30px;
+        text-align: center;
+    }
+
+    .smenu {
+        display: none;
+    }
+
+    .ssmenu {
+        display: none;
+    }
+
+    .usmenu {
+        display: none;
+    }
+
+    .menu:hover {
+        animation-name: menu;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+    .description {
+        background-color: #f4d03f;
+        font-family: Courier;
+        text-align: center;
+        padding: 40px;
+        font-size: 16px;
+        width: 150px;
+        position: absolute;
+        top: 420px;
+        left: calc(50% - 375px);
+        border-radius: 50px 50px 20px 20px;
+    }
+
+    .sdescription {
+        display: none;
+    }
+
+    #up {
+        z-index: 1;
+        position: fixed;
+        top: 91%;
+        left: calc(100% - 40px);
+        background-color: #f4d03f;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        margin: auto;
+    }
+
+    #footer {
+        position: absolute;
+        font-size: 16px;
+        font-family: Courier;
+        clear: both;
+        left: 0;
+        bottom: 0;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #ebebeb;
+    }
+
+    @keyframes menu {
+        0% {
+            width: 220px;
+            height: 150px;
+        }
+
+        100% {
+            width: 220px;
+            height: 170px;
+        }
+
+        from {
+            background-color: #979A9A;
+        }
+
+        to {
+            background-color: #626567;
+        }
+    }
 }
-.text
-{
-    position:absolute;
-    top:calc(50% - 30px);
-    left:calc(50% - 100px);
-    font-family:Courier;
-    font-size:25px;
-    font-weight:bold;
-}
-#logo
-{	
-	z-index:2;
-	top:-25px;
-	left:0;
-	position:absolute;
-	height:200px;
-	background-color:#ebebeb;
-	width:100%;
-}
-#title
-{
-	z-index:3;
-	position:relative;
-	left:calc(50% - 480px);
-	top:70px;
-	font-size:60px;
-	font-weight:bold;
-	font-family:Courier;
-}
-#title-p
-{
-    display: none;
-}
-.menu
-{
-	z-index:3;
-	float:left;
-	position:absolute;
-	top:210px;
-	width:200px;
-	height:150px;
-	background-color:#979A9A;
-	border-radius:15px 50px 30px;
-    text-align:center;
-}
-.smenu
-{
-    display:none;
-}
-.ssmenu
-{
-    display:none;
-}
-.usmenu
-{
-    display:none;
-}
-.menu:hover
-{
-    animation-name:menu;
-    animation-duration:0.5s;
-    animation-fill-mode: both;
-    
-        
-}
-#description
-{
-    background-color:#f4d03f;
-    font-family:Courier;
-    text-align:center;
-    padding:40px;
-    font-size:16px;
-    width:670px;
-    position:absolute;
-    top:460px;
-    left:calc(50% - 375px);
-    border-radius:50px 50px 20px 20px;
-}
-#up
-{
-    z-index:1;
-    position:fixed;
-    top:91%;
-    left:calc(100% - 40px);
-    background-color:#f4d03f;
-    width:40px;
-    height:40px;
-    border-radius:10px 0 0 10px;
-    margin:auto;
-}
-#footer
-{
-    position:absolute;
-    font-size:16px;
-    font-family:Courier;
-	clear:both;
-	left:0px;
-    top:1100px;
-	width:100%;
-	height:30px;
-    text-align:center;
-    padding-top:10px;
-	background-color:#ebebeb;
-}
-@keyframes menu
-{   
-    0% {width:200px; height:200px;}
-    100% {width:210px; height:220px;}
-    from{background-color:#979A9A;}
-    to{background-color:#626567;}
-}
-}
+
 /*///////////////////////////*/
 /*///// TABLET POZIOMO /////*/
 /*/////////////////////////*/
-@media (min-width: 950px) and (max-width: 1050px)
-{
-body
-{
-    background-image:url(../img/background.png);
-    background-repeat:repeat;
+@media (min-width: 950px) and (max-width: 1050px) {
+    body {
+        background-image: url(../img/background.png);
+        background-repeat: repeat;
+    }
+
+    .text {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 100px);
+        font-family: Courier;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #kotek {
+        width: 170px;
+        height: 170px;
+    }
+
+    #logo {
+        z-index: 2;
+        top: -25px;
+        left: 0;
+        position: absolute;
+        height: 150px;
+        background-color: #ebebeb;
+        width: 100%;
+    }
+
+    #title {
+        z-index: 3;
+        position: relative;
+        left: calc(50% - 425px);
+        top: 50px;
+        font-size: 55px;
+        font-weight: bold;
+        font-family: Courier;
+    }
+
+    #title-p {
+        display: none;
+    }
+
+    .menu {
+        z-index: 3;
+        float: left;
+        position: absolute;
+        top: 150px;
+        width: 185px;
+        height: 130px;
+        background-color: #979A9A;
+        border-radius: 15px 50px 30px;
+        text-align: center;
+    }
+
+    .smenu {
+        display: none;
+    }
+
+    .ssmenu {
+        display: none;
+    }
+
+    .usmenu {
+        display: none;
+    }
+
+    .menu:hover {
+        animation-name: menu;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+
+
+    }
+
+    .description {
+        background-color: #f4d03f;
+        font-family: Courier;
+        text-align: center;
+        padding: 40px;
+        font-size: 16px;
+        width: 120px;
+        position: absolute;
+        top: 330px;
+        left: calc(50% - 375px);
+        border-radius: 50px 50px 20px 20px;
+    }
+
+    .sdescription {
+        display: none;
+    }
+
+    #up {
+        z-index: 1;
+        position: fixed;
+        top: 91%;
+        left: calc(100% - 40px);
+        background-color: #f4d03f;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        margin: auto;
+    }
+
+    #footer {
+        position: absolute;
+        font-size: 16px;
+        font-family: Courier;
+        clear: both;
+        left: 0;
+        bottom: 0;
+        height: 30px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #ebebeb;
+    }
+
+    @keyframes menu {
+        0% {
+            width: 185px;
+            height: 130px;
+        }
+
+        100% {
+            width: 185px;
+            height: 150px;
+        }
+
+        from {
+            background-color: #979A9A;
+        }
+
+        to {
+            background-color: #626567;
+        }
+    }
 }
-.text
-{
-    position:absolute;
-    top:calc(50% - 30px);
-    left:calc(50% - 100px);
-    font-family:Courier;
-    font-size:24px;
-    font-weight:bold;
-}
-#kotek
-{
-    width:170px;
-    height:170px;
-}
-#logo
-{	
-	z-index:2;
-	top:-25px;
-	left:0;
-	position:absolute;
-	height:150px;
-	background-color:#ebebeb;
-	width:100%;
-}
-#title
-{
-	z-index:3;
-	position:relative;
-	left:calc(50% - 425px);
-	top:50px;
-	font-size:55px;
-	font-weight:bold;
-	font-family:Courier;
-}
-#title-p
-{
-    display: none;
-}
-.menu
-{
-	z-index:3;
-	float:left;
-	position:absolute;
-	top:150px;
-	width:185px;
-	height:130px;
-	background-color:#979A9A;
-	border-radius:15px 50px 30px;
-    text-align:center;
-}
-.smenu
-{
-    display:none;
-}
-.ssmenu
-{
-    display:none;
-}
-.usmenu
-{
-    display:none;
-}
-.menu:hover
-{
-    animation-name:menu;
-    animation-duration:0.5s;
-    animation-fill-mode: both;
-    
-        
-}
-#description
-{
-    background-color:#f4d03f;
-    font-family:Courier;
-    text-align:center;
-    padding:40px;
-    font-size:14px;
-    width:670px;
-    position:absolute;
-    top:330px;
-    left:calc(50% - 375px);
-    border-radius:50px 50px 20px 20px;
-}
-#up
-{
-    z-index:1;
-    position:fixed;
-    top:91%;
-    left:calc(100% - 40px);
-    background-color:#f4d03f;
-    width:40px;
-    height:40px;
-    border-radius:10px 0 0 10px;
-    margin:auto;
-}
-#footer
-{
-    position:absolute;
-    font-size:14px;
-    font-family:Courier;
-	clear:both;
-	left:0px;
-    top:900px;
-	width:100%;
-	height:30px;
-    text-align:center;
-    padding-top:10px;
-	background-color:#ebebeb;
-}
-@keyframes menu
-{   
-    0% {width:185px; height:130px;}
-    100% {width:200px; height:150px;}
-    from{background-color:#979A9A;}
-    to{background-color:#626567;}
-}
-}
+
 /*///////////////////////////*/
 /*///// TABLET PIONOWO /////*/
 /*/////////////////////////*/
-@media (min-width: 750px) and (max-width: 950px)
-{
-body
-{
-    background-image:url(../img/background.png);
-    background-repeat:repeat;
-}
-.text
-{
-    position:absolute;
-    top:calc(50% - 30px);
-    left:calc(50% - 100px);
-    font-family:Courier;
-    font-size:24px;
-    font-weight:bold;
-}
-#kotek
-{
-    position: absolute;
-    width:180px;
-    height:180px;
-    left:calc(50% - 145px);
-}
-#logo
-{	
-	z-index:2;
-	top:-25px;
-	left:0;
-	position:absolute;
-	height:150px;
-	background-color:#ebebeb;
-	width:100%;
-}
-#title
-{
-	display: none;
-}
-#stitle
-{
-    left:calc(50% - 185px);
-    position:relative; 
-    top:15px;    
+@media (min-width: 750px) and (max-width: 950px) {
+    body {
+        background-image: url(../img/background.png);
+        background-repeat: repeat;
+    }
+
+    .text {
+        position: absolute;
+        top: calc(50% - 30px);
+        left: calc(50% - 100px);
+        font-family: Courier;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    #kotek {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        left: calc(50% - 145px);
+    }
+
+    #logo {
+        z-index: 2;
+        top: -25px;
+        left: 0;
+        position: absolute;
+        height: 150px;
+        background-color: #ebebeb;
+        width: 100%;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #stitle {
+        left: calc(50% - 200px);
+        position: relative;
+        top: 15px;
+    }
+
+    #title-p {
+        display: block;
+        position: absolute;
+        top: 125px;
+        height: 100px;
+        width: 100%;
+        background-color: #ebebeb;
+        left: 0;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Courier;
+    }
+
+    .menu {
+        display: none;
+        z-index: 3;
+        float: left;
+        position: absolute;
+        top: 150px;
+        width: 185px;
+        height: 130px;
+        background-color: #979A9A;
+        border-radius: 15px 50px 30px;
+        text-align: center;
+    }
+
+    .smenu {
+        display: block;
+        z-index: 3;
+        float: left;
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        background-color: #979A9A;
+        border-radius: 15px 50px 30px;
+        text-align: center;
+    }
+
+    .ssmenu {
+        display: none;
+    }
+
+    .usmenu {
+        display: none;
+    }
+
+    .smenu:hover {
+        animation-name: menu;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+
+
+    }
+
+    .description {
+        background-color: #f4d03f;
+        font-family: Courier;
+        text-align: center;
+        padding: 40px;
+        font-size: 16px;
+        width: 150px;
+        position: absolute;
+        top: 600px;
+        left: calc(50% - 310px);
+        border-radius: 50px 50px 20px 20px;
+    }
+
+    .sdescription {
+        display: none;
+    }
+
+    #up {
+        z-index: 1;
+        position: fixed;
+        top: 91%;
+        left: calc(100% - 40px);
+        background-color: #f4d03f;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        margin: auto;
+    }
+
+    #footer {
+        position: absolute;
+        font-size: 12px;
+        font-family: Courier;
+        clear: both;
+        left: 0;
+        bottom: 0;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #ebebeb;
+    }
+
+    @keyframes menu {
+        from {
+            background-color: #979A9A;
+        }
+
+        to {
+            background-color: #626567;
+        }
+    }
 }
 
-#title-p
-{
-    display: block;
-    position:absolute;
-    top:125px;
-    height:100px;
-    width:100%;
-    background-color:#ebebeb;
-	left:0;
-	font-size:50px;
-	font-weight:bold;
-	font-family:Courier;
-}
-.menu
-{
-    display:none;
-	z-index:3;
-	float:left;
-	position:absolute;
-	top:150px;
-	width:185px;
-	height:130px;
-	background-color:#979A9A;
-	border-radius:15px 50px 30px;
-    text-align:center;
-}
-.smenu
-{
-    display:block;
-	z-index:3;
-	float:left;
-	position:absolute;
-	width:200px;
-	height:150px;
-	background-color:#979A9A;
-	border-radius:15px 50px 30px;
-    text-align:center;
-}
-.ssmenu
-{
-    display:none;
-}
-.usmenu
-{
-    display:none;
-}
-.smenu:hover
-{
-    animation-name:menu;
-    animation-duration:0.5s;
-    animation-fill-mode: both;
-    
-        
-}
-#description
-{
-    background-color:#f4d03f;
-    font-family:Courier;
-    text-align:center;
-    padding:40px;
-    font-size:12px;
-    width:550px;
-    position:absolute;
-    top:600px;
-    left:calc(50% - 310px);
-    border-radius:50px 50px 20px 20px;
-}
-#up
-{
-    z-index:1;
-    position:fixed;
-    top:91%;
-    left:calc(100% - 40px);
-    background-color:#f4d03f;
-    width:40px;
-    height:40px;
-    border-radius:10px 0 0 10px;
-    margin:auto;
-}
-#footer
-{
-    position:absolute;
-    font-size:12px;
-    font-family:Courier;
-	clear:both;
-	left:0px;
-    top:1050px;
-	width:100%;
-	height:20px;
-    text-align:center;
-    padding-top:10px;
-	background-color:#ebebeb;
-}
-@keyframes menu
-{   
-    from{background-color:#979A9A;}
-    to{background-color:#626567;}
-}
-}
 /*///////////////////////////*/
 /*///// TELEFON POZIOMO ////*/
 /*/////////////////////////*/
-@media (min-width: 450px) and (max-width: 750px)
-{
-body
-{
-    background-image:url(../img/background.png);
-    background-repeat:repeat;
+@media (min-width: 500px) and (max-width: 750px) {
+    body {
+        background-image: url(../img/background.png);
+        background-repeat: repeat;
+    }
+
+    .text {
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 55px);
+        font-family: Courier;
+        font-size: 18px;
+        font-weight: bold;
+        transform: rotate(60deg);
+    }
+
+    #kotek {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 20px;
+        left: -20px;
+    }
+
+    #logo {
+        z-index: 2;
+        top: -25px;
+        left: 0;
+        position: absolute;
+        height: 120px;
+        background-color: #ebebeb;
+        width: 100%;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #stitle {
+        position: relative;
+        left: 20px;
+        top: 25px;
+
+    }
+
+    #title-p {
+        display: block;
+        position: absolute;
+        top: 95px;
+        height: 100px;
+        width: 100%;
+        background-color: #ebebeb;
+        left: 0;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Courier;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .smenu {
+        display: none;
+    }
+
+    .ssmenu {
+        display: block;
+        z-index: 3;
+        float: left;
+        position: absolute;
+        width: 100px;
+        height: 250px;
+        background-color: #979A9A;
+        border-radius: 15px 50px 30px;
+        text-align: center;
+    }
+
+    .usmenu {
+        display: none;
+    }
+
+    .ssmenu:hover {
+        animation-name: menu;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .sdescription {
+        display: block;
+        background-color: #f4d03f;
+        font-family: Courier;
+        text-align: center;
+        padding: 40px;
+        font-size: 15px;
+        width: 40%;
+        height: 170px;
+        position: absolute;
+        border-radius: 50px 50px 20px 20px;
+    }
+
+    #up {
+        z-index: 1;
+        position: fixed;
+        top: 91%;
+        left: calc(100% - 40px);
+        background-color: #f4d03f;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        margin: auto;
+    }
+
+    #footer {
+        position: absolute;
+        font-size: 13px;
+        font-family: Courier;
+        clear: both;
+        left: 0px;
+        top: 1550px;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #ebebeb;
+    }
+
+    @keyframes menu {
+        from {
+            background-color: #979A9A;
+        }
+
+        to {
+            background-color: #626567;
+        }
+    }
 }
-.text
-{
-    position:absolute;
-    top:calc(50% - 20px);
-    left:calc(50% - 55px);
-    font-family:Courier;
-    font-size:18px;
-    font-weight:bold;
-    transform: rotate(60deg);
-}
-#kotek
-{
-    position: absolute;
-    width:150px;
-    height:150px;
-    top:20px;
-    left:-30px;
-}
-#logo
-{	
-	z-index:2;
-	top:-25px;
-	left:0;
-	position:absolute;
-	height:120px;
-	background-color:#ebebeb;
-	width:100%;
-}
-#title
-{
-	display: none;
-}
-#stitle
-{
-    position: relative;
-    left:20px;
-    top:25px;
-            
-}
-#title-p
-{
-    display: block;
-    position:absolute;
-    top:95px;
-    height:100px;
-    width:100%;
-    background-color:#ebebeb;
-	left:0;
-	font-size:50px;
-	font-weight:bold;
-	font-family:Courier;
-}
-.menu
-{
-    display:none;
-}
-.smenu
-{
-    display:none;
-}
-.ssmenu
-{
-    display:block;
-	z-index:3;
-	float:left;
-	position:absolute;
-	width:100px;
-	height:250px;
-	background-color:#979A9A;
-	border-radius:15px 50px 30px;
-    text-align:center;
-}
-.usmenu
-{
-    display:none;
-}
-.ssmenu:hover
-{
-    animation-name:menu;
-    animation-duration:0.5s;
-    animation-fill-mode: both;   
-}
-#description
-{
-    background-color:#f4d03f;
-    font-family:Courier;
-    text-align:center;
-    padding:40px;
-    font-size:11px;
-    width:40%;
-    position:absolute;
-    top:225px;
-    left:150px;
-    border-radius:50px 50px 20px 20px;
-}
-#up
-{
-    z-index:1;
-    position:fixed;
-    top:91%;
-    left:calc(100% - 40px);
-    background-color:#f4d03f;
-    width:40px;
-    height:40px;
-    border-radius:10px 0 0 10px;
-    margin:auto;
-}
-#footer
-{
-    position:absolute;
-    font-size:11px;
-    font-family:Courier;
-	clear:both;
-	left:0px;
-    top:1375px;
-	width:100%;
-	height:20px;
-    text-align:center;
-    padding-top:10px;
-	background-color:#ebebeb;
-}
-@keyframes menu
-{   
-    from{background-color:#979A9A;}
-    to{background-color:#626567;}
-}
+
+/*///////////////////////////*/
+/*///// TELEFON PIONOWO ////*/
+/*/////////////////////////*/
+@media (min-width: 300px) and (max-width: 500px) {
+    body {
+        background-image: url(../img/background.png);
+        background-repeat: repeat;
+    }
+
+    .text {
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 55px);
+        font-family: Courier;
+        font-size: 18px;
+        font-weight: bold;
+        transform: rotate(60deg);
+    }
+
+    #kotek {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 20px
+        left:calc(50% - 0px);
+    }
+
+    #logo {
+        z-index: 2;
+        top: -25px;
+        left: 0;
+        position: absolute;
+        height: 120px;
+        background-color: #ebebeb;
+        width: 100%;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #stitle {
+        position: relative;
+        left: 20px;
+        top: 25px;
+
+    }
+
+    #title-p {
+        display: block;
+        position: absolute;
+        top: 95px;
+        height: 100px;
+        width: 100%;
+        background-color: #ebebeb;
+        left: 0;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Courier;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .smenu {
+        display: none;
+    }
+
+    .ssmenu {
+        display: block;
+        z-index: 3;
+        float: left;
+        position: absolute;
+        width: 100px;
+        height: 250px;
+        background-color: #979A9A;
+        border-radius: 15px 50px 30px;
+        text-align: center;
+    }
+
+    .usmenu {
+        display: none;
+    }
+
+    .ssmenu:hover {
+        animation-name: menu;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .sdescription {
+        display: block;
+        background-color: #f4d03f;
+        font-family: Courier;
+        text-align: center;
+        padding: 40px;
+        font-size: 15px;
+        width: 40%;
+        height: 170px;
+        position: absolute;
+        border-radius: 50px 50px 20px 20px;
+    }
+
+    #up {
+        z-index: 1;
+        position: fixed;
+        top: 91%;
+        left: calc(100% - 40px);
+        background-color: #f4d03f;
+        width: 40px;
+        height: 40px;
+        border-radius: 10px 0 0 10px;
+        margin: auto;
+    }
+
+    #footer {
+        position: absolute;
+        font-size: 13px;
+        font-family: Courier;
+        clear: both;
+        left: 0px;
+        top: 1550px;
+        width: 100%;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #ebebeb;
+    }
+
+    @keyframes menu {
+        from {
+            background-color: #979A9A;
+        }
+
+        to {
+            background-color: #626567;
+        }
+    }
 }
