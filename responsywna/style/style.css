@@ -147,6 +147,15 @@ body {
 /*//////// KOMPUTER ////////*/
 /*/////////////////////////*/
 @media (min-width: 1050px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
     body {
         background-image: url(../img/background.png);
         background-repeat: repeat;
@@ -286,6 +295,15 @@ body {
 /*///// TABLET POZIOMO /////*/
 /*/////////////////////////*/
 @media (min-width: 950px) and (max-width: 1050px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
     body {
         background-image: url(../img/background.png);
         background-repeat: repeat;
@@ -428,6 +446,15 @@ body {
 /*///// TABLET PIONOWO /////*/
 /*/////////////////////////*/
 @media (min-width: 750px) and (max-width: 950px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
     body {
         background-image: url(../img/background.png);
         background-repeat: repeat;
@@ -580,6 +607,15 @@ body {
 /*///// TELEFON POZIOMO ////*/
 /*/////////////////////////*/
 @media (min-width: 500px) and (max-width: 750px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
     body {
         background-image: url(../img/background.png);
         background-repeat: repeat;
@@ -725,6 +761,15 @@ body {
 /*///// TELEFON PIONOWO ////*/
 /*/////////////////////////*/
 @media (min-width: 300px) and (max-width: 500px) {
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
     body {
         background-image: url(../img/background.png);
         background-repeat: repeat;
@@ -744,8 +789,7 @@ body {
         position: absolute;
         width: 150px;
         height: 150px;
-        top: 20px
-        left:calc(50% - 0px);
+        top: 20px left:calc(50% - 0px);
     }
 
     #logo {
