@@ -6,7 +6,16 @@
 </head>
 <body>
     <script>
-        alert(window.location.hash);
+        function getToken() {
+            var token = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    window.location.hash;
+                }
+            }
+            xhttp.open("PUT", "data.json", true);
+            xhttp.send();
+        }
     </script>   
   <h3>The page is in its development stage, please be patient.</h3>
     <a href="zdarzenia\zdarzenia.html">Programowanie zdarzeniowe</a>
