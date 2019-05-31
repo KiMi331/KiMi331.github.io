@@ -5,18 +5,10 @@
 <title>Stronka</title>
 </head>
 <body>
+<script src="embed.js"></script>
     <script>
-        function getToken() {
-            var token = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    window.location.hash;
-                }
-            }
-            xhttp.open("PUT", "data.json", true);
-            xhttp.send();
-        }
-    </script>   
+        instgrm.Embeds.process();
+    </script> 
   <h3>The page is in its development stage, please be patient.</h3>
     <a href="zdarzenia\zdarzenia.html">Programowanie zdarzeniowe</a>
     <a href="responsywna/index.html">Strona responsywna</a>
@@ -24,5 +16,6 @@
     <div id="api" style="height:500px;">
         <a  href="https://api.instagram.com/oauth/authorize/?client_id=3b7ee9359fb24cd7b64b993647f49f4a&redirect_uri=http://kimi331.github.io&response_type=token"><button>Autoryzacja</button></a>
     </div> 
+	<a href="https://api.instagram.com/oembed?url=/p/fA9uwTtkSN/">Ig</a>
 </body>
 </html>
