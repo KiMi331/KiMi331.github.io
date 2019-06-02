@@ -845,6 +845,7 @@ body {
         font-family: Courier;
         font-size: 18px;
         font-weight: bold;
+        transform: rotate(0deg);
     }
 
     #kotek {
