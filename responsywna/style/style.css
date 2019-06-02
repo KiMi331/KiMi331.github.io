@@ -20,6 +20,7 @@ a:visited {
 }
 
 body {
+    min-height: 850px;
     background-image: url(../img/background.png);
     background-repeat: repeat;
 }
@@ -113,6 +114,10 @@ body {
     display: none;
 }
 
+.usdescription {
+    display: none;
+}
+
 #up {
     z-index: 1;
     position: fixed;
@@ -131,7 +136,6 @@ body {
     font-family: Courier;
     clear: both;
     left: 0px;
-    top: 1100px;
     width: 100%;
     height: 30px;
     text-align: center;
@@ -163,17 +167,21 @@ body {
     }
 
     body {
+        min-height: 850px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
+        border: 1px solid transparent;
     }
 
     #content {
+        float: left;
         min-height: 100%;
         height: auto;
         height: 100%;
     }
 
     .text {
+        float: left;
         position: absolute;
         top: calc(50% - 30px);
         left: calc(50% - 110px);
@@ -183,6 +191,7 @@ body {
     }
 
     #logo {
+        float: left;
         z-index: 2;
         top: -25px;
         left: 0;
@@ -193,6 +202,7 @@ body {
     }
 
     #title {
+        float: left;
         z-index: 3;
         position: relative;
         left: calc(50% - 500px);
@@ -237,6 +247,7 @@ body {
     }
 
     .description {
+        float: left;
         background-color: #f4d03f;
         font-family: Courier;
         text-align: center;
@@ -253,7 +264,12 @@ body {
         display: none;
     }
 
+    .usdescription {
+        display: none;
+    }
+
     #up {
+        float: left;
         z-index: 1;
         position: fixed;
         top: 91%;
@@ -266,12 +282,11 @@ body {
     }
 
     #footer {
+        clear: both;
         position: relative;
         font-size: 16px;
         font-family: Courier;
-        clear: both;
         left: 0;
-        bottom: 0;
         height: 30px;
         text-align: center;
         padding-top: 10px;
@@ -313,6 +328,7 @@ body {
     }
 
     body {
+        min-height: 850px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -410,6 +426,10 @@ body {
         display: none;
     }
 
+    .usdescription {
+        display: none;
+    }
+
     #up {
         z-index: 1;
         position: fixed;
@@ -470,6 +490,7 @@ body {
     }
 
     body {
+        min-height: 1100px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -587,6 +608,10 @@ body {
         display: none;
     }
 
+    .usdescription {
+        display: none;
+    }
+
     #up {
         z-index: 1;
         position: fixed;
@@ -637,6 +662,7 @@ body {
     }
 
     body {
+        min-height: 1100px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -721,9 +747,10 @@ body {
 
     .usmenu {
         display: none;
+
     }
 
-    .ssmenu:hover {
+    .usmenu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
         animation-fill-mode: both;
@@ -746,6 +773,10 @@ body {
         border-radius: 50px 50px 20px 20px;
     }
 
+    .usdescription {
+        display: none;
+    }
+
     #up {
         z-index: 1;
         position: fixed;
@@ -764,8 +795,6 @@ body {
         font-family: Courier;
         clear: both;
         left: 0px;
-        top: 1550px;
-        width: 100%;
         height: 20px;
         text-align: center;
         padding-top: 10px;
@@ -788,6 +817,7 @@ body {
 /*/////////////////////////*/
 @media (min-width: 300px) and (max-width: 500px) {
 
+
     html,
     body {
         scroll-behavior: smooth;
@@ -797,6 +827,7 @@ body {
     }
 
     body {
+        min-height: 1800px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -814,14 +845,14 @@ body {
         font-family: Courier;
         font-size: 18px;
         font-weight: bold;
-        transform: rotate(60deg);
     }
 
     #kotek {
         position: absolute;
         width: 150px;
         height: 150px;
-        top: 20px left:calc(50% - 0px);
+        top: 20px;
+        left: calc(50% - 125px);
     }
 
     #logo {
@@ -840,8 +871,8 @@ body {
 
     #stitle {
         position: relative;
-        left: 20px;
-        top: 25px;
+        left: calc(50% - 140px);
+        top: 35px;
 
     }
 
@@ -853,7 +884,7 @@ body {
         width: 100%;
         background-color: #ebebeb;
         left: 0;
-        font-size: 50px;
+        font-size: 30px;
         font-weight: bold;
         font-family: Courier;
     }
@@ -867,22 +898,23 @@ body {
     }
 
     .ssmenu {
+        display: none;
+
+    }
+
+    .usmenu {
         display: block;
         z-index: 3;
         float: left;
         position: absolute;
-        width: 100px;
-        height: 250px;
+        width: 230px;
+        height: 150px;
         background-color: #979A9A;
-        border-radius: 15px 50px 30px;
+        border-radius: 30px;
         text-align: center;
     }
 
-    .usmenu {
-        display: none;
-    }
-
-    .ssmenu:hover {
+    .usmenu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
         animation-fill-mode: both;
@@ -893,13 +925,17 @@ body {
     }
 
     .sdescription {
+        display: none;
+    }
+
+    .usdescription {
         display: block;
         background-color: #f4d03f;
         font-family: Courier;
         text-align: center;
         padding: 40px;
         font-size: 15px;
-        width: 40%;
+        width: 150px;
         height: 170px;
         position: absolute;
         border-radius: 50px 50px 20px 20px;
@@ -908,7 +944,7 @@ body {
     #up {
         z-index: 1;
         position: fixed;
-        top: 91%;
+        top: 88%;
         left: calc(100% - 40px);
         background-color: #f4d03f;
         width: 40px;
@@ -923,9 +959,7 @@ body {
         font-family: Courier;
         clear: both;
         left: 0px;
-        top: 1550px;
-        width: 100%;
-        height: 20px;
+        height: 40px;
         text-align: center;
         padding-top: 10px;
         background-color: #ebebeb;
@@ -940,4 +974,5 @@ body {
             background-color: #626567;
         }
     }
+}
 }
