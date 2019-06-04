@@ -65,6 +65,10 @@ body {
     display: none;
 }
 
+#ustitle {
+    display: none;
+}
+
 .menu {
     z-index: 3;
     float: left;
@@ -89,6 +93,10 @@ body {
     display: none;
 }
 
+.uusmenu {
+    display: none;
+}
+
 .menu:hover {
     animation-name: menu;
     animation-duration: 0.5s;
@@ -110,11 +118,19 @@ body {
     border-radius: 50px 50px 20px 20px;
 }
 
+.ddescription {
+    display: none;
+}
+
 .sdescription {
     display: none;
 }
 
 .usdescription {
+    display: none;
+}
+
+.uusdescription {
     display: none;
 }
 
@@ -216,6 +232,10 @@ body {
         display: none;
     }
 
+    #ustitle {
+        display: none;
+    }
+
     .menu {
         z-index: 3;
         float: left;
@@ -240,6 +260,10 @@ body {
         display: none;
     }
 
+    .uusmenu {
+        display: none;
+    }
+
     .menu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
@@ -260,11 +284,19 @@ body {
         border-radius: 50px 50px 20px 20px;
     }
 
+    .ddescription {
+        display: none;
+    }
+
     .sdescription {
         display: none;
     }
 
     .usdescription {
+        display: none;
+    }
+
+    .uusdescription {
         display: none;
     }
 
@@ -373,6 +405,10 @@ body {
         font-family: Courier;
     }
 
+    #ustitle {
+        display: none;
+    }
+
     #title-p {
         display: none;
     }
@@ -401,6 +437,10 @@ body {
         display: none;
     }
 
+    .uusmenu {
+        display: none;
+    }
+
     .menu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
@@ -422,11 +462,19 @@ body {
         border-radius: 50px 50px 20px 20px;
     }
 
+    .ddescription {
+        display: none;
+    }
+
     .sdescription {
         display: none;
     }
 
     .usdescription {
+        display: none;
+    }
+
+    .uusdescription {
         display: none;
     }
 
@@ -490,7 +538,7 @@ body {
     }
 
     body {
-        min-height: 1100px;
+        min-height: 900px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -535,6 +583,10 @@ body {
         left: calc(50% - 200px);
         position: relative;
         top: 15px;
+    }
+
+    #ustitle {
+        display: none;
     }
 
     #title-p {
@@ -583,6 +635,10 @@ body {
         display: none;
     }
 
+    .uusmenu {
+        display: none;
+    }
+
     .smenu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
@@ -592,6 +648,11 @@ body {
     }
 
     .description {
+        display: none;
+    }
+
+    .ddescription {
+        display: block;
         background-color: #f4d03f;
         font-family: Courier;
         text-align: center;
@@ -599,7 +660,7 @@ body {
         font-size: 16px;
         width: 150px;
         position: absolute;
-        top: 600px;
+        top: 450px;
         left: calc(50% - 310px);
         border-radius: 50px 50px 20px 20px;
     }
@@ -609,6 +670,10 @@ body {
     }
 
     .usdescription {
+        display: none;
+    }
+
+    .uusdescription {
         display: none;
     }
 
@@ -662,7 +727,7 @@ body {
     }
 
     body {
-        min-height: 1100px;
+        min-height: 1000px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -712,6 +777,10 @@ body {
 
     }
 
+    #ustitle {
+        display: none;
+    }
+
     #title-p {
         display: block;
         position: absolute;
@@ -739,7 +808,7 @@ body {
         float: left;
         position: absolute;
         width: 100px;
-        height: 250px;
+        height: 210px;
         background-color: #979A9A;
         border-radius: 15px 50px 30px;
         text-align: center;
@@ -750,13 +819,25 @@ body {
 
     }
 
-    .usmenu:hover {
+    .uusmenu {
+        display: none;
+    }
+
+    .ssmenu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
         animation-fill-mode: both;
     }
 
     .description {
+        display: none;
+    }
+
+    .ddescription {
+        display: none;
+    }
+
+    .uusdescription {
         display: none;
     }
 
@@ -767,8 +848,10 @@ body {
         text-align: center;
         padding: 40px;
         font-size: 15px;
-        width: 40%;
-        height: 170px;
+        max-width: 700px;
+        min-width: 170px;
+        margin-right: 20px;
+        height: 130px;
         position: absolute;
         border-radius: 50px 50px 20px 20px;
     }
@@ -827,7 +910,7 @@ body {
     }
 
     body {
-        min-height: 1800px;
+        min-height: 890px;
         background-image: url(../img/background.png);
         background-repeat: repeat;
     }
@@ -877,6 +960,10 @@ body {
 
     }
 
+    #ustitle {
+        display: none;
+    }
+
     #title-p {
         display: block;
         position: absolute;
@@ -915,6 +1002,10 @@ body {
         text-align: center;
     }
 
+    .uusmenu {
+        display: none;
+    }
+
     .usmenu:hover {
         animation-name: menu;
         animation-duration: 0.5s;
@@ -925,7 +1016,15 @@ body {
         display: none;
     }
 
+    .ddescription {
+        display: none;
+    }
+
     .sdescription {
+        display: none;
+    }
+
+    .uusdescription {
         display: none;
     }
 
@@ -976,4 +1075,172 @@ body {
         }
     }
 }
+
+@media (max-width: 300px) {
+
+
+    html,
+    body {
+        scroll-behavior: smooth;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+    body {
+        min-height: 780px;
+        background-image: url(../img/background.png);
+        background-repeat: repeat;
+    }
+
+    #content {
+        min-height: 100%;
+        height: auto;
+        height: 100%;
+    }
+
+    .text {
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 55px);
+        font-family: Courier;
+        font-size: 18px;
+        font-weight: bold;
+        transform: rotate(0deg);
+    }
+
+    #kotek {
+        position: absolute;
+        width: 130px;
+        height: 130px;
+        top: 20px;
+        left: calc(50% - 112px);
+    }
+
+    #logo {
+        z-index: 2;
+        top: -25px;
+        left: 0;
+        position: absolute;
+        height: 120px;
+        background-color: #ebebeb;
+        width: 100%;
+    }
+
+    #title {
+        display: none;
+    }
+
+    #stitle {
+        display: none;
+    }
+
+    #ustitle {
+        display: block;
+        position: relative;
+        left: calc(50% - 50px);
+        top: 20px;
+    }
+
+    #title-p {
+        display: block;
+        position: absolute;
+        top: 95px;
+        height: 100px;
+        width: 100%;
+        background-color: #ebebeb;
+        left: 0;
+        font-size: 25px;
+        font-weight: bold;
+        font-family: Courier;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .smenu {
+        display: none;
+    }
+
+    .ssmenu {
+        display: none;
+
+    }
+
+    .usmenu {
+        display: none;
+    }
+
+    .uusmenu {
+        display: block;
+        z-index: 3;
+        float: left;
+        position: absolute;
+        width: 130px;
+        height: 150px;
+        background-color: #979A9A;
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .uusmenu:hover {
+        animation-name: menu;
+        animation-duration: 0.5s;
+        animation-fill-mode: both;
+    }
+
+    .description {
+        display: none;
+    }
+
+    .ddescription {
+        display: none;
+    }
+
+    .sdescription {
+        display: none;
+    }
+
+    .usdescription {
+        display: none;
+    }
+
+    .uusdescription {
+        display: block;
+        background-color: #f4d03f;
+        font-family: Courier;
+        text-align: center;
+        padding: 40px;
+        font-size: 15px;
+        width: 80px;
+        position: absolute;
+        border-radius: 50px 50px 20px 20px;
+    }
+
+    #up {
+        display: none;
+    }
+
+    #footer {
+        position: relative;
+        font-size: 11px;
+        font-family: Courier;
+        clear: both;
+        left: 0px;
+        height: 40px;
+        text-align: center;
+        padding-top: 10px;
+        background-color: #ebebeb;
+    }
+
+    @keyframes menu {
+        from {
+            background-color: #979A9A;
+        }
+
+        to {
+            background-color: #626567;
+        }
+    }
 }
